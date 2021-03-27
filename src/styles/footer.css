@@ -1,0 +1,14 @@
+footer{
+    width: 100%;
+    background: #000000;    
+    position: absolute;
+    /* width: 411px; */
+    height: 133px;
+    /* left: 0px; */
+    top: 721px
+}
+
+.footer_div{
+    color: beige;
+    padding: 28px;
+}
