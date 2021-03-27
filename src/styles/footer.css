@@ -3,12 +3,55 @@ footer{
     background: #000000;    
     position: absolute;
     /* width: 411px; */
-    height: 133px;
+     height: 133px; 
     /* left: 0px; */
     top: 721px
+    
 }
 
 .footer_div{
     color: beige;
     padding: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_brand{
+    font-family: Calibre;
+   color: #ffffff;
+   font-size: 14px;
+   width: 83px;
+}
+
+.footer_paragraph{
+font-family: Calibre;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 176.2%;
+/* or 18px */
+
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+
+.footer_copyright{
+   padding-left: 28px;
+   padding-right: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_copyright > p{
+    font-family: Calibre;
+font-style: normal;
+font-weight: 500;
+font-size: 7px;
+line-height: 164.7%;
+/* identical to box height, or 12px */
+
+letter-spacing: -0.02em;
+
+color: #C4C4C4;
 }

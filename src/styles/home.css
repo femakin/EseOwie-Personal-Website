@@ -1,4 +1,15 @@
 .homepage{
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     /* z-index: 1; */
+}
+
+.ellipse2{
+    position: absolute;
+    left: -20px;
+    top: 350px;
+}
+
+.ellipse1{
+  position: absolute;
+  left: 227px;
 }
