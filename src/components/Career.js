@@ -3,7 +3,7 @@ import React from 'react'
 export default function Career() {
     return (
         <div className="container">
-            <h1>Career</h1>
+            <h1>Political Career</h1>
         </div>
     )
 }

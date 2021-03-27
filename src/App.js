@@ -8,6 +8,7 @@ import Publication from './components/Publications';
 import Social from './components/Social';
 import Navbar from './components/Navbar';
 import Academics from './components/Academics';
+import Professional from './components/Professional';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Footer from './common/Footer';
 
@@ -22,9 +23,10 @@ export default class App extends Component {
           <Route path="/" exact component={HomePage}/>
           <Route path="/academics" exact component={Academics}/>
           <Route path="/career" exact component={Career}/>
-          <Route path="/publication" exact component={Publication}/>
+          <Route path="/Publications" exact component={Publication}/>
           <Route path="/social" exact component={Social}/>
           <Route path="/contact" exact component={Contact}/>
+          <Route path="/professional" exact component={Professional}/>
         </Switch>
        
       </Router>
