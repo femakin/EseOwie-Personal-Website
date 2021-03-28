@@ -1,37 +1,36 @@
-import React, { Component } from 'react';
-import './styles/index.css';
+import React, { Component } from "react";
+import "./styles/index.css";
 // import Header from '../src/common/Header';
-import HomePage from './components/HomePage';
-import Contact from './components/Contact';
-import Career from './components/Career';
-import Publication from './components/Publications';
-import Social from './components/Social';
-import Navbar from './components/Navbar';
-import Academics from './components/Academics';
-import Professional from './components/Professional';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Footer from './common/Footer';
+import HomePage from "./pages/HomePage";
+import Contact from "./pages/Contact";
+import Career from "./pages/Career";
+import Publication from "./pages/Publications";
+import Social from "./pages/Social";
+import Navbar from "./pages/Navbar";
+import Academics from "./pages/Academics";
+import Professional from "./pages/Professional";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./common/Footer";
 
 export default class App extends Component {
   render() {
     return (
       <div className="app">
-      {/* <Header/> */}
-      <Router>
-        <Navbar/>
-        <Switch>
-          <Route path="/" exact component={HomePage}/>
-          <Route path="/academics" exact component={Academics}/>
-          <Route path="/career" exact component={Career}/>
-          <Route path="/Publications" exact component={Publication}/>
-          <Route path="/social" exact component={Social}/>
-          <Route path="/contact" exact component={Contact}/>
-          <Route path="/professional" exact component={Professional}/>
-        </Switch>
-       
-      </Router>
-       <Footer/> 
+        {/* <Header/> */}
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route path="/" exact component={HomePage} />
+            <Route path="/academics" exact component={Academics} />
+            <Route path="/career" exact component={Career} />
+            <Route path="/Publications" exact component={Publication} />
+            <Route path="/social" exact component={Social} />
+            <Route path="/contact" exact component={Contact} />
+            <Route path="/professional" exact component={Professional} />
+          </Switch>
+        </Router>
+        <Footer />
       </div>
-    )
+    );
   }
 }

@@ -3,24 +3,24 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-	const handleClick = () => {
-		setOpen(!open);
-	};
+  const handleClick = () => {
+    setOpen(!open);
+  };
 
-	const closeMenu = () => {
-		setOpen(false);
-	};
+  const closeMenu = () => {
+    setOpen(false);
+  };
   return (
     <div className="navigation">
       <nav className="navbar">
-        <Link to="/" className="nav-logo" >
-        ESEOWIE{" "}
+        <Link to="/" className="nav-logo">
+          ESEOWIE
         </Link>
         <div onClick={handleClick} className="nav-icon">
-				{open ? <FiX /> : <FiMenu />}
-			</div>
+          {open ? <FiX /> : <FiMenu />}
+        </div>
         <ul className={open ? "nav-links active" : "nav-links"}>
           {/* <li className="nav-item">
             <Link to="/" className="nav-link" onClick={closeMenu}>
@@ -28,51 +28,33 @@ export default function Navbar() {
             </Link>
           </li> */}
           <li className="nav-item">
-            <Link
-              to="/career"
-              className="nav-link" onClick={closeMenu}
-            >
-            Political Career
+            <Link to="/career" className="nav-link" onClick={closeMenu}>
+              Political Career
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/career"
-              className="nav-link" onClick={closeMenu}
-            >
-            Professional Career
+            <Link to="/career" className="nav-link" onClick={closeMenu}>
+              Professional Career
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/academics"
-              className="nav-link" onClick={closeMenu}
-            >
+            <Link to="/academics" className="nav-link" onClick={closeMenu}>
               Academics Pedigree
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link
-              to="/social"
-              className="nav-link" onClick={closeMenu}
-            >
-             Social Enterprise
+            <Link to="/social" className="nav-link" onClick={closeMenu}>
+              Social Enterprise
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/publications"
-              className="nav-link" onClick={closeMenu}
-            >
-             Publications
+            <Link to="/publications" className="nav-link" onClick={closeMenu}>
+              Publications
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/contact"
-              className="nav-link" onClick={closeMenu}
-            >
+            <Link to="/contact" className="nav-link" onClick={closeMenu}>
               Contact
             </Link>
           </li>
