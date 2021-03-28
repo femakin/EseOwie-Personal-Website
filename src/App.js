@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './styles/index.css';
+import React, { Component } from "react";
+import "./styles/index.css";
 // import Header from '../src/common/Header';
 import HomePage from './pages/HomePage';
 import Contact from './pages/Contact';
@@ -16,6 +16,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
+
       {/* <Header/> */}
       <Router>
         <Navbar/>
@@ -31,7 +32,11 @@ export default class App extends Component {
        
       </Router>
        {/* <Footer/>  */}
+
       </div>
-    )
+    );
   }
 }
+
+
+
