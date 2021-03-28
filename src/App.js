@@ -6,11 +6,11 @@ import Contact from "./pages/Contact";
 import Career from "./pages/Career";
 import Publication from "./pages/Publications";
 import Social from "./pages/Social";
-import Navbar from "./pages/Navbar";
+import Navbar from "./components/common/Navbar";
 import Academics from "./pages/Academics";
 import Professional from "./pages/Professional";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Footer from "./common/Footer";
+import Footer from "./components/common/Footer";
 
 export default class App extends Component {
   render() {
@@ -29,7 +29,7 @@ export default class App extends Component {
             <Route path="/professional" exact component={Professional} />
           </Switch>
         </Router>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }
