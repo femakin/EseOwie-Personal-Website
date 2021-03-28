@@ -1,0 +1,69 @@
+.homepage{
+    height: 100vh;
+}
+
+.ellipse2{
+    position: absolute;
+    left: -90px;
+    top: 350px;
+}
+
+.ellipse1{
+  position: absolute;
+  left: 87px;
+}
+.homepage_content{
+   
+}
+
+.homepage_content > p{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: Calibre;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 101.7%;
+  
+    height: 13px;
+    /* or 13px */
+    
+    letter-spacing: 0.37em;
+    
+    color: #FFFFFF;
+}
+
+.homepage_content > h1{
+    /* width: 106px; */
+height: 120px;
+font-family: Calibre;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 99.7%;
+
+/* or 60px */
+
+letter-spacing: -0.065em;
+
+color: #FFFFFF;
+}
+
+
+section{
+    background-color: honeydew;
+    height: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+    .ellipse2{
+        position: absolute;
+        left: -200px;
+        top: 350px;
+    }
+    
+    .ellipse1{
+      position: absolute;
+      left: 67px;
+    }
+}
