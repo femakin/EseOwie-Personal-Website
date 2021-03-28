@@ -10,7 +10,7 @@ import Navbar from "./components/common/Navbar";
 import Academics from "./pages/Academics";
 import Professional from "./pages/Professional";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Footer from "./components/common/Footer";
+// import Footer from "./components/common/Footer";
 
 export default class App extends Component {
   render() {
