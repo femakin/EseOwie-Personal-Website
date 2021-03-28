@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import './styles/index.css';
 // import Header from '../src/common/Header';
-import HomePage from './components/HomePage';
-import Contact from './components/Contact';
-import Career from './components/Career';
-import Publication from './components/Publications';
-import Social from './components/Social';
-import Navbar from './components/Navbar';
-import Academics from './components/Academics';
-import Professional from './components/Professional';
+import HomePage from './pages/HomePage';
+import Contact from './pages/Contact';
+import Career from './pages/Career';
+import Publication from './pages/Publications';
+import Social from './pages/Social';
+import Navbar from './components/common/Navbar';
+import Academics from './pages/Academics';
+import Professional from './pages/Professional';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Footer from './common/Footer';
+// import Footer from './components/common/Footer';
 
 export default class App extends Component {
   render() {
@@ -30,7 +30,7 @@ export default class App extends Component {
         </Switch>
        
       </Router>
-       <Footer/> 
+       {/* <Footer/>  */}
       </div>
     )
   }

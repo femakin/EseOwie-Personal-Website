@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import ESEOWIE from '../../assets/svg/ESEOWIE.svg';
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar() {
     <div className="navigation">
       <nav className="navbar">
         <Link to="/" className="nav-logo" >
-        ESEOWIE{" "}
+        <img src={ESEOWIE} alt="Logo" />
         </Link>
         <div onClick={handleClick} className="nav-icon">
 				{open ? <FiX /> : <FiMenu />}

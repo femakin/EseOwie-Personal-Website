@@ -1,15 +1,94 @@
-.homepage{
-    /* background-color: greenyellow; */
-    /* z-index: 1; */
-}
-
-.ellipse2{
+.homepage {
+    margin-bottom: 30px;
+  }
+  .homepage__hero {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12% 0;
+    background-color: #4d0adb;
+  }
+  .homepage__text {
+    font-family: Calibre;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.37em;
+    color: #ffffff;
+  }
+  .homepage__subtext {
+    font-family: Calibre;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 48px;
+    letter-spacing: -0.065em;
+    color: #ffffff;
+    margin-top: 23px;
+  }
+  .emphasis-text {
+    position: relative;
+    color: #c0e914;
+    font-weight: bold;
+    /* display: block; */
+  }
+  .emphasis-text__underline {
+    position: absolute;
+    bottom: -12px;
+    left: 0px;
+  }
+  .homepage__image {
+    position: relative;
+    z-index: 999;
+  }
+  .ellipse2 {
+    max-width: 100%;
     position: absolute;
     left: -20px;
     top: 350px;
-}
+  }
+  .ellipse1 {
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 150px;
+  }
 
-.ellipse1{
-  position: absolute;
-  left: 227px;
-}
+  @media screen and (min-width: 425px) {
+    .homepage__subtext {
+      font-family: Calibre;
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 68px;
+      letter-spacing: -0.065em;
+      color: #ffffff;
+      margin-top: 23px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .homepage__hero {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .homepage__text {
+      font-family: Calibre;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.37em;
+      color: #ffffff;
+    }
+  
+    .homepage__subtext {
+      font-family: Calibre;
+      font-weight: normal;
+      font-size: 110px;
+      line-height: 113px;
+      letter-spacing: -0.065em;
+      color: #ffffff;
+      margin-top: 23px;
+    }
+  }
+  
+  

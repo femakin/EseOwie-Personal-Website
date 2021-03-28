@@ -1,37 +1,45 @@
 .navbar {
+    height: 80px;
+    width: 100%;
+    /* background: blue; */
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 5%;
+    padding: 0 2rem;
     font-size: 1.2rem;
-    background-color: #4d0adb;
-  }
-  .nav-logo {
+}
+
+.nav-logo {
     text-decoration: none;
     color: white;
     width: 101.23px;
     height: 9.67px;
     font-family: Calibre;
-  }
-  .nav-links {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-  }
+}
 
-  .nav-link {
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 20px;
+    list-style: none;
+}
+
+.nav-link {
     text-decoration: none;
     color: white;
     transition: 0.3s all;
     font-family: Calibre;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 31px;
-    letter-spacing: -0.055em;
-  }
-  .nav-link:hover {
+    width: 136px;
+height: 31px;
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: -0.055em;
+}
+
+.nav-link:hover {
     color: red;
 }
 
@@ -40,12 +48,10 @@
     font-size: 2rem;
     cursor: pointer;
 }
-  
 
-@media only screen and (max-width: 1024px) {
-    /* body{
-        background-color: blueviolet;
-    } */
+
+
+@media only screen and (max-width: 500px) {
     .navbar {
         position: relative;
     }
@@ -56,8 +62,8 @@
         position: absolute;
         /* text-align: center; */
          width: 100%; 
-          height: 842px; 
-        top: 80px;
+         height: 100vh;
+        top: 70px;
         left: -100%;
         transition: 0.5s all;
     }
@@ -65,10 +71,9 @@
     .nav-links.active {
         background-color: #4D0ADB;
         left: 0px;
-        /* height: 100vh; */
         /* height: 600px; */
         padding-left: 51px;
-        padding-top: 40px;
+        padding-top: 90px;
     }
 
     .nav-item {
@@ -81,3 +86,18 @@
         display: flex;
     }
 }
+
+/* // <div className=" container homepage">
+//     <img src={Ellipse2} alt="Ellipse2" className="ellipse2"/>            
+//     <img src={Ellipse1} alt="Ellipse1" className="ellipse1"/>
+
+//     <div className="homepage_content">
+//         <p className="homepage_title">ESE STEPHEN OWIE</p>
+//         <div className="homepage_content">
+//             <h1>In the pursuit of<span> Execellence. </span> </h1>
+//         </div>
+//     </div>
+//     <section>
+//         <h1>This is Section</h1>
+//     </section>
+// </div> */
